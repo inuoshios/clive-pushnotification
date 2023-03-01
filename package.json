@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
-    "start": "node src/app.ts"
+    "start": "node build/app.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
