@@ -6,5 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 exports.default = {
-    port: parseInt(process.env.PORT)
+    port: parseInt(process.env.PORT),
+    appId: process.env.APP_ID,
+    appKey: process.env.SECRET_KEY
 };
