@@ -2,6 +2,7 @@ import axios from "axios";
 import config from "../../config";
 
 // xaxak85766@wifame.com
+const imageLink = "https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.zikorabank.com%2F&psig=AOvVaw20kndogBmKJqWzO8debiti&ust=1677851773836000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIj_luyyvf0CFQAAAAAdAAAAABAE";
 
 type requestBody = {
   title: string;
@@ -20,10 +21,7 @@ export const sendNotification = async (payload: requestBody) => {
     contents: { en: payload.body },
     included_segments: ["All"],
     content_available: true,
-    small_icon: "ic_notification_icon",
-    data: {
-      PushTitle: payload.title
-    }
+    small_icon: imageLink
   };
 
   try {
